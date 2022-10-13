@@ -67,8 +67,6 @@ Slides can be found here: [https://github.com/maxlindmark/quarto_website](https:
   - two indents for indents...
 ```
 
-![](quarto_code.png){.absolute top=300 left=130 right=200 bottom=100}
-
 ## Disclaimer
 - Since we don't really know Quarto that well, we cannot provide solutions to very specific requests or debugging
 - ... But in our experience, you don't *need* tailored code to make clean websites since there are many pre-set themes to work with, and the homepage has EVERYTHING
