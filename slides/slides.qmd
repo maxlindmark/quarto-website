@@ -1,0 +1,154 @@
+---
+format:
+  revealjs: 
+    theme: default
+    transition: fade
+    slide-number: true
+    auto-play-media: true
+    cap-location: top
+---
+
+# Making websites in Quarto & GitHub {background-color=#1b9e77}
+Max Lindmark & Federico Maioli
+
+Oct 13 2022 | Zoom
+
+## Before we start...
+- Ok to record? We have a lot of screenshots of the process but there's also a lot of hands-on interactive work that we want to save for you. Recording will be uploaded on Max's dropbox for a limited time and only participants get a link 
+
+## Reminder of the prerequisites
+You do not need to know Quarto or RMarkdown (but it might help if you want to customize a lot). If you have not used GitHub with RStudio before or do not have Git installed, start here (else jump to #5):
+ 
+1. Create a GitHub account: [https://github.com/](https://github.com/)
+2. Install Git: [https://happygitwithr.com/install-git.html#install-git](https://happygitwithr.com/install-git.html#install-git)
+
+## Reminder of the prerequisites
+3. Open RStudio (please update if you have an old version). Go to Global Options (from the Tools menu). Click Git/SVN. Click Enable version control interface for RStudio projects. If necessary, enter the path for your Git or SVN executable where provided. You can also create or add your RSA key for SSH if necessary. [https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN)
+
+## Reminder of the prerequisites
+4. Now make sure it worked: when creating a new project in R, you should now be able to see a “version control” option. Click and you should see a “git” tab in the top right where you have the environment and all that.
+5. Install Quarto: [https://quarto.org/](https://quarto.org/)
+6. Bring a nice picture of yourself to put on your home page
+
+## 
+Slides can be found here: [https://github.com/maxlindmark/quarto_website](https://github.com/maxlindmark/quarto_website)
+
+## Goals of this workshop
+- Make a website completely in RStudio & Quarto
+- Deploy it using GitHub pages
+
+## Why do YOU need a website?
+- We guess you already know since you are here but... 
+  - Make it easy for other people to find & contact you
+  - Host all your online presence in one place
+  - Blogging? Listing job ads?
+  - Better looking and more functional than uni-pages
+
+## Say no more! But why R, Quarto & GitHub then?
+- Code-based approach will quickly be the more time-efficient option
+- We are familiar with R already
+- GitHub is super nice for version control & sharing of code, reproducibility and deposition. Learn it!
+- Deploying is easier than e.g. with Netlify (and doesn't rely on another company)
+- Quarto... An open-source scientific and technical publishing system built on Pandoc!
+
+## We feel you... 
+![](quarto_everywhere.jpg){fig-align=center}
+
+## We feel you... 
+- But we think it's worthwhile!
+- Templates for manuscripts, slides (like these!), reports and much more
+- Fairly easy to learn, especially if you know just a little RMarkdown
+- You don't need to *know* or *understand* it: just dive into it! It's fairly straightforward
+
+## An example...
+```{.r}
+## new slide title
+- bullet
+  - two indents for indents...
+```
+
+![](quarto_code.png){.absolute top=300 left=130 right=200 bottom=100}
+
+## Disclaimer
+- Since we don't really know Quarto that well, we cannot provide solutions to very specific requests or debugging
+- ... But in our experience, you don't *need* tailored code to make clean websites since there are many pre-set themes to work with, and the homepage has EVERYTHING
+
+## Quarto: [https://quarto.org/](https://quarto.org/)
+![](quarto_guides.png){fig-align=center}
+
+## Ok I got it! Just show me how it's done
+- If you have all the prerequisites^[see e-mail], let's start!
+- We simply follow the Quarto guide here: [https://quarto.org/docs/websites/](https://quarto.org/docs/websites/)
+- We will show with screenshots first, and then do it interactively 
+- There are actually at least two ways: GitHub or RStudio first
+- This is the "GitHub-first" option
+
+## 1. Make a new GitHub repo
+
+## 
+![](github_repo.png){fig-align=center}
+
+##
+![](github_repo2.png){fig-align=center}
+
+## 2. Make a new RStudio project
+
+## 
+![](new_project.png){fig-align=center}
+
+## 
+![](rstudio_git.png){fig-align=center}
+
+##
+![](rstudio_git2.png){fig-align=center}
+
+## 
+- Save on C: if you are on a PC
+
+##
+![](project_done.png){fig-align=center}
+
+## 3. Generate new quarto-website file using shell
+
+## 
+![](shell.png){fig-align=center}
+
+## 
+![](shell_command.png){fig-align=center}
+
+## 
+![](yml.png){fig-align=center}
+
+## 
+![](about.png){fig-align=center}
+
+## 
+![](preview.png){fig-align=center}
+
+## 4. Editing your site
+
+## What files do we have and what do we change?
+![](files_from_shell.png){fig-align=center}
+
+## Find other quarto sites and poke around!
+
+## Time to share screen and poke around!
+
+## Themes
+[https://quarto.org/docs/output-formats/html-themes.html](https://quarto.org/docs/output-formats/html-themes.html)
+[https://bootswatch.com/](https://bootswatch.com/)
+
+## Always quarto render to view changes!
+![](cmon.png){fig-align=center}
+
+## 5. Deploy site!
+- Not super complex
+- Follow this link: [https://quarto.org/docs/publishing/](https://quarto.org/docs/publishing/)
+- We use GitHub pages
+- Before deploying the site, you can always deploy so that's done
+
+## 
+![](commiting.png){fig-align=center}
+
+## 
+![](pushed.png){fig-align=center}

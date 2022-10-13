@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "mysite",
+    "section": "",
+    "text": "To learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "contact/index.html",
+    "href": "contact/index.html",
+    "title": "mysite",
+    "section": "",
+    "text": "Twitter: max_lindmark"
+  }
+]
